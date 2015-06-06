@@ -20,10 +20,5 @@ public class Animal {
 	public String toString() {
 		return "Animal [type=" + type + ", soundsLike=" + soundsLike + "]";
 	}
-
-	/*public void saySomething(){
-		System.out.println(soundsLike);
-	}*/
-	
 	
 }
