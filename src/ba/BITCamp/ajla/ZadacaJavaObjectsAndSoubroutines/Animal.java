@@ -14,8 +14,6 @@ public class Animal {
 		this.soundsLike = soundsLike;
 	}
 	
-	
-	
 	@Override
 	public String toString() {
 		return "Animal [type=" + type + ", soundsLike=" + soundsLike + "]";
