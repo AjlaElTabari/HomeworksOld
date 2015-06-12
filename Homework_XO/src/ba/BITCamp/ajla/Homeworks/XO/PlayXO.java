@@ -19,8 +19,9 @@ public class PlayXO {
 				// declaration of 2D array that will represent our TicTacToe board
 				String[][] board = new String[boardSize][boardSize];
 				// Filling the board with "-" to mark all available spaces and to
-				// avoid appearing nulls and confusing the user
+				// avoid appearing nulls and confusing user
 				ArraysHelper.fill2DArray(board);
+				ArraysHelper.print2DArray(board);
 	
 				// Until the board is full, or the winner is declared, users
 				// entering coordinates for their symbols
@@ -34,7 +35,7 @@ public class PlayXO {
 						System.out.println("Congratulations! X won!");
 						break;
 					}
-	
+					
 					if (!ArraysHelper.isFull(board)) {
 						// O player's move
 						XOHelper.play(board, "O");
