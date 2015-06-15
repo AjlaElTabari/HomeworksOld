@@ -128,10 +128,16 @@ public class Main {
 		}
 	}
 	
-	/*public static int[] getNumberOfSongsPerAlbum(Concert c, Album[] a) {
+	public static int[] getNumberOfSongsPerAlbum(Concert c, Album[] a) {
 		int[] numberOfSongsPerAlbum = new int[a.length];
-		for (int i = 0; i < c.songs.length; i++) {
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < 1.length; j++) {
+				for (int k = 0; k < a[j].songs.length; k++) {
+					if (c.songls[i].name.equals(a[j].songs[k].name));
+						numberOfSongsPerAlbum++;
+				}
+			}
 			
 		}
-	}*/
+	}
 }
