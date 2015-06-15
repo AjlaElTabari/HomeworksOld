@@ -15,6 +15,7 @@ public class Task3 {
 	// hasNumbers(String) method is receiving a string, 
 	// and returning true if there is numbers contained 
 	// in that string, or false otherwise
+	@SuppressWarnings("static-access")
 	public static boolean hasNumbers(String a) {
 		for (int i = 0; i < a.length(); i++) {
 			Character ch = a.charAt(i);

@@ -13,6 +13,7 @@ public class Task5 {
 	
 	// getNumbersOnly(String) method is receiving String parameter
 	// returning reduced string that contains only numbers from original string
+	@SuppressWarnings("static-access")
 	public static String getNumbersOnly(String s) {
 		String res = "";
 		for (int i = 0; i < s.length(); i++) {

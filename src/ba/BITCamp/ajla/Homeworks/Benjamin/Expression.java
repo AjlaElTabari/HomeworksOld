@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Expression {
 
+	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 	
 		// Asking user to enter expression in specified format a + b  or a - b or a / b or a * b
@@ -56,6 +57,7 @@ public class Expression {
 			
 				System.out.println(expression + "=" + result);
 				
+				input.close();
 
 	}
 

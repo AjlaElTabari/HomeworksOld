@@ -58,7 +58,7 @@ public class Main {
 		Album album8 = new Album ("Ipak verujem u sebe", artist5, a8, "Progressive rock");
 		
 		// List of albums
-		Album[] albums = {album1, album2, album3, album4, album5};
+		Album[] albums = {album1, album2, album3, album4, album5, album7, album8};
 		
 		// Testing
 		System.out.println(isSameAuthor(song1, song11));

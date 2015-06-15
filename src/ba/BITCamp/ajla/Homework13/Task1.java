@@ -9,6 +9,7 @@ public class Task1 {
 		System.out.println("Enter temperatures in Celsius");
 		float celsius = input.nextFloat();
 		System.out.printf("%.2fC = %.2fK", celsius, convertToKelvins(celsius));
+		input.close();
 	}
 	
 	/**
@@ -17,7 +18,6 @@ public class Task1 {
 	 * @return temperature in Kelvins, double value
 	 */
 	public static double convertToKelvins (double celsius) {
-		 double kelvins = 0.0;
-		return kelvins = celsius + 273.15;
+		return celsius + 273.15;
 	}
 }
