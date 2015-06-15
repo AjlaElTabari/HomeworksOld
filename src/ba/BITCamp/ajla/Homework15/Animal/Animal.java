@@ -2,8 +2,8 @@ package ba.BITCamp.ajla.Homework15.Animal;
 
 public class Animal {
 	
-	public static byte habitat = 1;
-	public static byte time = 1;
+	private static byte habitat = 1;
+	private static byte time = 1;
 	
 	@SuppressWarnings("unused")
 	private String name;
