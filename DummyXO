@@ -1,0 +1,60 @@
+package ba.bitcamp.homework_dummy_xo;
+
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class DummyXO extends JFrame{
+	
+	private static final long serialVersionUID = 3422916801085155976L;
+	public static final int BOARD_SIZE = 3;
+	
+	private JButton[][] fields;
+	private String playerSign;
+	
+	public DummyXO() {
+		super();
+		setLayout(new GridLayout(BOARD_SIZE, BOARD_SIZE));
+		playerSign = "";
+		
+		fields = new JButton[BOARD_SIZE][BOARD_SIZE];
+		for (int i = 0; i < fields.length; i++) {
+			for (int j = 0; j < fields[i].length; j++) {
+				fields[i][j] = new JButton();
+				fields[i][j].addActionListener(new Action(fields[i][j]));
+				add(fields[i][j]);
+			}
+		}
+		
+		setTitle("Dummy XO");
+		setSize(300, 300);
+		setResizable(false);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		
+	}
+	
+	private class Action implements ActionListener {
+		
+		private JButton button;
+		
+		public Action(JButton button) {
+			super();
+			this.button = button;
+		}
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			if(playerSign.equals("X")){
+				playerSign = "O";
+			} else {
+				playerSign = "X";
+			}
+				button.setText(playerSign);
+		}
+	}
+}
